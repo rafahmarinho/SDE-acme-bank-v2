@@ -41,4 +41,4 @@ await adminClient().storage.from("statements").upload(`${userId}/${statementId}.
 - [ ] No temp files are left after generation
 - [ ] Another customer's statement path returns 403/404
 
-**Status:** Pending
+**Status:** Applied

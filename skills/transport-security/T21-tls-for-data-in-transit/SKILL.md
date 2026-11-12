@@ -36,4 +36,4 @@ if (process.env.NODE_ENV === "production" && url.protocol !== "https:") throw ne
 - [ ] No `http://` or `ws://` URLs in production config
 - [ ] SSL Labs grade A or better on the production domain
 
-**Status:** Pending
+**Status:** Applied

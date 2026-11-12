@@ -43,4 +43,4 @@ export async function POST() {
 - [ ] Pressing Back after logout doesn't show account data
 - [ ] Realtime subscriptions are closed on logout
 
-**Status:** Pending
+**Status:** Applied

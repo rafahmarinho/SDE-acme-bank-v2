@@ -38,4 +38,4 @@ faker.seed(42); const customers = Array.from({ length: 6 }, () => ({ full_name: 
 - [ ] Seeds contain only synthetic data
 - [ ] Event logs and aggregates contain no direct identifiers
 
-**Status:** Pending
+**Status:** Applied

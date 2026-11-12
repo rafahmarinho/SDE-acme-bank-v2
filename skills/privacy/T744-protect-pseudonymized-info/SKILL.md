@@ -36,4 +36,4 @@ revoke all on schema private from anon, authenticated;
 - [ ] The mapping table can't be reached through the public API
 - [ ] Integrations and events use pseudonyms only
 
-**Status:** Pending
+**Status:** Applied

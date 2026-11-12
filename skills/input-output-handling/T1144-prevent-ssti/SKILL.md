@@ -38,4 +38,4 @@ const pdf = await renderToBuffer(<StatementPdf rows={rows} />);   // data passed
 - [ ] No runtime template compilation of dynamic strings
 - [ ] A description like `{{7*7}}` / `<%= 7*7 %>` appears literally in PDFs and emails
 
-**Status:** Pending
+**Status:** Applied

@@ -47,4 +47,4 @@ create unique index profiles_email_uniq on public.profiles (lower(email));
 - [ ] Personal data isn't duplicated across tables
 - [ ] Duplicate account opening is rejected
 
-**Status:** Pending
+**Status:** Applied

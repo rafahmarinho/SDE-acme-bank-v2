@@ -39,4 +39,4 @@ create trigger ledger_immutable before update or delete on public.ledger_entries
 - [ ] Customers and support can't read or alter audit tables
 - [ ] Simulation reset keeps the audit history
 
-**Status:** Pending
+**Status:** Applied

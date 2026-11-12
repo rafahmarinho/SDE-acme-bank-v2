@@ -46,4 +46,4 @@ export async function blockCard(cardId: string) {
 - [ ] Each server action re-authorizes on its own
 - [ ] No authorization decision reads a client-supplied role
 
-**Status:** Pending
+**Status:** Applied

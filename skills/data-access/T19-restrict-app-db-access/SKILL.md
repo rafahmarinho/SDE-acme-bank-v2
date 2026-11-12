@@ -45,4 +45,4 @@ export const adminClient = () => createClient(env.SUPABASE_URL, env.SUPABASE_SER
 - [ ] The `authenticated` role can't insert into or update `ledger_entries` directly
 - [ ] The reset/simulation functions can't be executed by `authenticated`
 
-**Status:** Pending
+**Status:** Applied

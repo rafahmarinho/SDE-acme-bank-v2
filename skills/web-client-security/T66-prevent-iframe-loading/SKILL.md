@@ -44,4 +44,4 @@ const nextConfig: NextConfig = { async headers() { return [{ source: "/(.*)", he
 - [ ] The app can't be framed (verified in a browser)
 - [ ] Realtime still works under the CSP
 
-**Status:** Pending
+**Status:** Applied

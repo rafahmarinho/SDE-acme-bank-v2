@@ -40,4 +40,4 @@ const nextConfig: NextConfig = { poweredByHeader: false, experimental: { serverA
 - [ ] `poweredByHeader: false`
 - [ ] Limit violations show up in logs and alerts
 
-**Status:** Pending
+**Status:** Applied

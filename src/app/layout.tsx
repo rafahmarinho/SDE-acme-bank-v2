@@ -1,11 +1,15 @@
 /**
- * PLACEHOLDER - Root layout
- *
- * Purpose (from specs/PRD.md): Navy blue + orange theme; side menu on desktop, bottom navigation on mobile; English UI.
- *
- * Security task recipes to follow when implementing: skills/web-client-security
- * Not production code - implement per AGENTS.md.
+ * Root layout: English UI, navy blue + orange theme (Tailwind tokens in globals.css).
+ * The per-request CSP nonce set by middleware is applied by Next.js to its own scripts.
  */
-export default function Page() {
-  return null;
+import "./globals.css";
+
+export const metadata = { title: "ACME Bank", description: "ACME Bank digital banking (simulation)" };
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
 }

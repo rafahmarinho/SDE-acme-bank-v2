@@ -51,4 +51,4 @@ export async function authorize(resource: keyof typeof POLICY, method: string) {
 - [ ] Customers can't call staff or simulation endpoints
 - [ ] Tests cover each role against each endpoint
 
-**Status:** Pending
+**Status:** Applied

@@ -38,4 +38,4 @@ export async function sendSecurityNotice(to: string, kind: "password_changed" | 
 - [ ] Email bodies contain no sensitive financial data
 - [ ] Header-injection inputs are rejected
 
-**Status:** Pending
+**Status:** Applied

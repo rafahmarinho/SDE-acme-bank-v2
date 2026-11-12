@@ -40,4 +40,4 @@ import DOMPurify from "isomorphic-dompurify";
 - [ ] XSS payloads in beneficiary names, references and support text render as text
 - [ ] `javascript:` URLs are neutralized
 
-**Status:** Pending
+**Status:** Applied

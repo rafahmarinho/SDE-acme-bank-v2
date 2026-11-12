@@ -36,4 +36,4 @@ export const supabase = createBrowserClient(
 - [ ] DevTools → Application shows no sensitive data in local/session storage or IndexedDB
 - [ ] Reloading the page still shows the persisted results (served from the DB)
 
-**Status:** Pending
+**Status:** Applied

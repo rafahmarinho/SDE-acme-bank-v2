@@ -39,4 +39,4 @@ export async function GET(req: Request) {
 - [ ] Job and settlement endpoints return 401 without the secret
 - [ ] No internal endpoint relies on obscurity
 
-**Status:** Pending
+**Status:** Applied

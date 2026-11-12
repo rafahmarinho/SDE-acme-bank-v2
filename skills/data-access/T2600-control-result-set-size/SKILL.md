@@ -41,4 +41,4 @@ if (p.cursor) q = q.lt("booked_at", p.cursor);
 - [ ] The PostgREST max rows setting is configured
 - [ ] Staff search with an empty query returns nothing
 
-**Status:** Pending
+**Status:** Applied

@@ -44,4 +44,4 @@ export const env = z.object({
 - [ ] The env schema fails fast when a variable is missing
 - [ ] Secret scanning runs in CI
 
-**Status:** Pending
+**Status:** Applied

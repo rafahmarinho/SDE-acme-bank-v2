@@ -49,4 +49,4 @@ end $$;
 - [ ] Search and filter inputs are validated with zod
 - [ ] Injection test payloads in search return no extra rows and no errors
 
-**Status:** Pending
+**Status:** Applied

@@ -48,114 +48,114 @@ This repository is a **placeholder scaffold**. Implement each feature described 
 ### authentication
 | ID | Title | Skill File | Priority | Category | Status |
 |----|-------|-----------|----------|----------|--------|
-| T2 | Secure the password reset mechanism | [skills/authentication/T2-secure-password-reset/SKILL.md](./skills/authentication/T2-secure-password-reset/SKILL.md) | 9 | CODE_FIX | Pending |
-| T70 | Implement account lockout or authentication throttling for system accounts | [skills/authentication/T70-account-lockout-auth-throttling/SKILL.md](./skills/authentication/T70-account-lockout-auth-throttling/SKILL.md) | 8 | CODE_FIX | Pending |
-| T338 | Control access to resources through user authentication and authorization | [skills/authentication/T338-control-access-authn-authz/SKILL.md](./skills/authentication/T338-control-access-authn-authz/SKILL.md) | 7 | CODE_FIX | Pending |
+| T2 | Secure the password reset mechanism | [skills/authentication/T2-secure-password-reset/SKILL.md](./skills/authentication/T2-secure-password-reset/SKILL.md) | 9 | CODE_FIX | Applied |
+| T70 | Implement account lockout or authentication throttling for system accounts | [skills/authentication/T70-account-lockout-auth-throttling/SKILL.md](./skills/authentication/T70-account-lockout-auth-throttling/SKILL.md) | 8 | CODE_FIX | Applied |
+| T338 | Control access to resources through user authentication and authorization | [skills/authentication/T338-control-access-authn-authz/SKILL.md](./skills/authentication/T338-control-access-authn-authz/SKILL.md) | 7 | CODE_FIX | Applied |
 
 ### session-management
 | ID | Title | Skill File | Priority | Category | Status |
 |----|-------|-----------|----------|----------|--------|
-| T20 | Generate unique session IDs and reset old IDs after authentication | [skills/session-management/T20-unique-session-ids/SKILL.md](./skills/session-management/T20-unique-session-ids/SKILL.md) | 9 | CODE_FIX | Pending |
-| T1539 | Clear browser data on user logout | [skills/session-management/T1539-clear-browser-data-on-logout/SKILL.md](./skills/session-management/T1539-clear-browser-data-on-logout/SKILL.md) | 8 | CODE_FIX | Pending |
+| T20 | Generate unique session IDs and reset old IDs after authentication | [skills/session-management/T20-unique-session-ids/SKILL.md](./skills/session-management/T20-unique-session-ids/SKILL.md) | 9 | CODE_FIX | Applied |
+| T1539 | Clear browser data on user logout | [skills/session-management/T1539-clear-browser-data-on-logout/SKILL.md](./skills/session-management/T1539-clear-browser-data-on-logout/SKILL.md) | 8 | CODE_FIX | Applied |
 
 ### authorization
 | ID | Title | Skill File | Priority | Category | Status |
 |----|-------|-----------|----------|----------|--------|
-| T184 | Perform authorization checks on RESTful web services | [skills/authorization/T184-authz-checks-restful-services/SKILL.md](./skills/authorization/T184-authz-checks-restful-services/SKILL.md) | 9 | CODE_FIX | Pending |
-| T17 | Do not only rely on client-side authorization | [skills/authorization/T17-no-client-side-only-authz/SKILL.md](./skills/authorization/T17-no-client-side-only-authz/SKILL.md) | 8 | CODE_FIX | Pending |
-| T378 | Authorize every request for data objects | [skills/authorization/T378-authorize-every-data-object-request/SKILL.md](./skills/authorization/T378-authorize-every-data-object-request/SKILL.md) | 8 | CODE_FIX | Pending |
-| T50 | Use indirect object reference maps if accessing files | [skills/authorization/T50-indirect-object-references-files/SKILL.md](./skills/authorization/T50-indirect-object-references-files/SKILL.md) | 8 | CODE_FIX | Pending |
+| T184 | Perform authorization checks on RESTful web services | [skills/authorization/T184-authz-checks-restful-services/SKILL.md](./skills/authorization/T184-authz-checks-restful-services/SKILL.md) | 9 | CODE_FIX | Applied |
+| T17 | Do not only rely on client-side authorization | [skills/authorization/T17-no-client-side-only-authz/SKILL.md](./skills/authorization/T17-no-client-side-only-authz/SKILL.md) | 8 | CODE_FIX | Applied |
+| T378 | Authorize every request for data objects | [skills/authorization/T378-authorize-every-data-object-request/SKILL.md](./skills/authorization/T378-authorize-every-data-object-request/SKILL.md) | 8 | CODE_FIX | Applied |
+| T50 | Use indirect object reference maps if accessing files | [skills/authorization/T50-indirect-object-references-files/SKILL.md](./skills/authorization/T50-indirect-object-references-files/SKILL.md) | 8 | CODE_FIX | Applied |
 
 ### data-access
 | ID | Title | Skill File | Priority | Category | Status |
 |----|-------|-----------|----------|----------|--------|
-| T38 | Bind variables in SQL statements | [skills/data-access/T38-bind-variables-sql/SKILL.md](./skills/data-access/T38-bind-variables-sql/SKILL.md) | 10 | CODE_FIX | Pending |
-| T19 | Restrict Application's Access to Database | [skills/data-access/T19-restrict-app-db-access/SKILL.md](./skills/data-access/T19-restrict-app-db-access/SKILL.md) | 8 | CODE_FIX | Pending |
-| T2598 | Implement query-level access control | [skills/data-access/T2598-query-level-access-control/SKILL.md](./skills/data-access/T2598-query-level-access-control/SKILL.md) | 8 | CODE_FIX | Pending |
-| T2600 | Control the result set size returned by a query | [skills/data-access/T2600-control-result-set-size/SKILL.md](./skills/data-access/T2600-control-result-set-size/SKILL.md) | 7 | CODE_FIX | Pending |
+| T38 | Bind variables in SQL statements | [skills/data-access/T38-bind-variables-sql/SKILL.md](./skills/data-access/T38-bind-variables-sql/SKILL.md) | 10 | CODE_FIX | Applied |
+| T19 | Restrict Application's Access to Database | [skills/data-access/T19-restrict-app-db-access/SKILL.md](./skills/data-access/T19-restrict-app-db-access/SKILL.md) | 8 | CODE_FIX | Applied |
+| T2598 | Implement query-level access control | [skills/data-access/T2598-query-level-access-control/SKILL.md](./skills/data-access/T2598-query-level-access-control/SKILL.md) | 8 | CODE_FIX | Applied |
+| T2600 | Control the result set size returned by a query | [skills/data-access/T2600-control-result-set-size/SKILL.md](./skills/data-access/T2600-control-result-set-size/SKILL.md) | 7 | CODE_FIX | Applied |
 
 ### api-security
 | ID | Title | Skill File | Priority | Category | Status |
 |----|-------|-----------|----------|----------|--------|
-| T1362 | Perform message throttling in Web APIs | [skills/api-security/T1362-message-throttling-web-apis/SKILL.md](./skills/api-security/T1362-message-throttling-web-apis/SKILL.md) | 8 | CODE_FIX | Pending |
-| T1365 | Mitigate Server Side Request Forgery | [skills/api-security/T1365-mitigate-ssrf/SKILL.md](./skills/api-security/T1365-mitigate-ssrf/SKILL.md) | 8 | CODE_FIX | Pending |
-| T2139 | Prevent information exposure through APIs | [skills/api-security/T2139-prevent-info-exposure-apis/SKILL.md](./skills/api-security/T2139-prevent-info-exposure-apis/SKILL.md) | 7 | CODE_FIX | Pending |
-| T536 | Restrict the size of incoming messages in services | [skills/api-security/T536-restrict-incoming-message-size/SKILL.md](./skills/api-security/T536-restrict-incoming-message-size/SKILL.md) | 8 | CODE_FIX | Pending |
-| T35 | Fine-tune HTTP server settings | [skills/api-security/T35-fine-tune-http-server-settings/SKILL.md](./skills/api-security/T35-fine-tune-http-server-settings/SKILL.md) | 9 | CODE_FIX | Pending |
+| T1362 | Perform message throttling in Web APIs | [skills/api-security/T1362-message-throttling-web-apis/SKILL.md](./skills/api-security/T1362-message-throttling-web-apis/SKILL.md) | 8 | CODE_FIX | Applied |
+| T1365 | Mitigate Server Side Request Forgery | [skills/api-security/T1365-mitigate-ssrf/SKILL.md](./skills/api-security/T1365-mitigate-ssrf/SKILL.md) | 8 | CODE_FIX | Applied |
+| T2139 | Prevent information exposure through APIs | [skills/api-security/T2139-prevent-info-exposure-apis/SKILL.md](./skills/api-security/T2139-prevent-info-exposure-apis/SKILL.md) | 7 | CODE_FIX | Applied |
+| T536 | Restrict the size of incoming messages in services | [skills/api-security/T536-restrict-incoming-message-size/SKILL.md](./skills/api-security/T536-restrict-incoming-message-size/SKILL.md) | 8 | CODE_FIX | Applied |
+| T35 | Fine-tune HTTP server settings | [skills/api-security/T35-fine-tune-http-server-settings/SKILL.md](./skills/api-security/T35-fine-tune-http-server-settings/SKILL.md) | 9 | CODE_FIX | Applied |
 
 ### input-output-handling
 | ID | Title | Skill File | Priority | Category | Status |
 |----|-------|-----------|----------|----------|--------|
-| T36 | Escape untrusted data in HTML, HTML attributes, CSS, and JavaScript | [skills/input-output-handling/T36-escape-untrusted-data/SKILL.md](./skills/input-output-handling/T36-escape-untrusted-data/SKILL.md) | 8 | CODE_FIX | Pending |
-| T37 | Avoid DOM-based Cross-Site Scripting (XSS) | [skills/input-output-handling/T37-avoid-dom-based-xss/SKILL.md](./skills/input-output-handling/T37-avoid-dom-based-xss/SKILL.md) | 8 | CODE_FIX | Pending |
-| T1144 | Prevent Server-Side Template Injection (SSTI) | [skills/input-output-handling/T1144-prevent-ssti/SKILL.md](./skills/input-output-handling/T1144-prevent-ssti/SKILL.md) | 8 | CODE_FIX | Pending |
-| T42 | Avoid relying on untrusted data for server-side selection | [skills/input-output-handling/T42-no-untrusted-server-side-selection/SKILL.md](./skills/input-output-handling/T42-no-untrusted-server-side-selection/SKILL.md) | 10 | CODE_FIX | Pending |
+| T36 | Escape untrusted data in HTML, HTML attributes, CSS, and JavaScript | [skills/input-output-handling/T36-escape-untrusted-data/SKILL.md](./skills/input-output-handling/T36-escape-untrusted-data/SKILL.md) | 8 | CODE_FIX | Applied |
+| T37 | Avoid DOM-based Cross-Site Scripting (XSS) | [skills/input-output-handling/T37-avoid-dom-based-xss/SKILL.md](./skills/input-output-handling/T37-avoid-dom-based-xss/SKILL.md) | 8 | CODE_FIX | Applied |
+| T1144 | Prevent Server-Side Template Injection (SSTI) | [skills/input-output-handling/T1144-prevent-ssti/SKILL.md](./skills/input-output-handling/T1144-prevent-ssti/SKILL.md) | 8 | CODE_FIX | Applied |
+| T42 | Avoid relying on untrusted data for server-side selection | [skills/input-output-handling/T42-no-untrusted-server-side-selection/SKILL.md](./skills/input-output-handling/T42-no-untrusted-server-side-selection/SKILL.md) | 10 | CODE_FIX | Applied |
 
 ### web-client-security
 | ID | Title | Skill File | Priority | Category | Status |
 |----|-------|-----------|----------|----------|--------|
-| T29 | Use anti-Cross-Site Request Forgery (CSRF) tokens | [skills/web-client-security/T29-anti-csrf-tokens/SKILL.md](./skills/web-client-security/T29-anti-csrf-tokens/SKILL.md) | 7 | CODE_FIX | Pending |
-| T257 | Secure cross origin resource sharing (CORS) | [skills/web-client-security/T257-secure-cors/SKILL.md](./skills/web-client-security/T257-secure-cors/SKILL.md) | 8 | CODE_FIX | Pending |
-| T66 | Prevent web pages from being loaded inside iFrame | [skills/web-client-security/T66-prevent-iframe-loading/SKILL.md](./skills/web-client-security/T66-prevent-iframe-loading/SKILL.md) | 7 | CODE_FIX | Pending |
-| T1468 | Encrypt sensitive data at rest in the browser | [skills/web-client-security/T1468-encrypt-browser-data-at-rest/SKILL.md](./skills/web-client-security/T1468-encrypt-browser-data-at-rest/SKILL.md) | 9 | CODE_FIX | Pending |
+| T29 | Use anti-Cross-Site Request Forgery (CSRF) tokens | [skills/web-client-security/T29-anti-csrf-tokens/SKILL.md](./skills/web-client-security/T29-anti-csrf-tokens/SKILL.md) | 7 | CODE_FIX | Applied |
+| T257 | Secure cross origin resource sharing (CORS) | [skills/web-client-security/T257-secure-cors/SKILL.md](./skills/web-client-security/T257-secure-cors/SKILL.md) | 8 | CODE_FIX | Applied |
+| T66 | Prevent web pages from being loaded inside iFrame | [skills/web-client-security/T66-prevent-iframe-loading/SKILL.md](./skills/web-client-security/T66-prevent-iframe-loading/SKILL.md) | 7 | CODE_FIX | Applied |
+| T1468 | Encrypt sensitive data at rest in the browser | [skills/web-client-security/T1468-encrypt-browser-data-at-rest/SKILL.md](./skills/web-client-security/T1468-encrypt-browser-data-at-rest/SKILL.md) | 9 | CODE_FIX | Applied |
 
 ### crypto-randomness
 | ID | Title | Skill File | Priority | Category | Status |
 |----|-------|-----------|----------|----------|--------|
-| T151 | Use cryptographically secure random numbers | [skills/crypto-randomness/T151-cryptographically-secure-random/SKILL.md](./skills/crypto-randomness/T151-cryptographically-secure-random/SKILL.md) | 7 | CODE_FIX | Pending |
-| T60 | Use correct and approved cryptographic algorithms, parameters, and key lengths | [skills/crypto-randomness/T60-approved-crypto-algorithms/SKILL.md](./skills/crypto-randomness/T60-approved-crypto-algorithms/SKILL.md) | 8 | CODE_FIX | Pending |
-| T59 | Use standard libraries for cryptography | [skills/crypto-randomness/T59-standard-crypto-libraries/SKILL.md](./skills/crypto-randomness/T59-standard-crypto-libraries/SKILL.md) | 8 | CODE_FIX | Pending |
+| T151 | Use cryptographically secure random numbers | [skills/crypto-randomness/T151-cryptographically-secure-random/SKILL.md](./skills/crypto-randomness/T151-cryptographically-secure-random/SKILL.md) | 7 | CODE_FIX | Applied |
+| T60 | Use correct and approved cryptographic algorithms, parameters, and key lengths | [skills/crypto-randomness/T60-approved-crypto-algorithms/SKILL.md](./skills/crypto-randomness/T60-approved-crypto-algorithms/SKILL.md) | 8 | CODE_FIX | Applied |
+| T59 | Use standard libraries for cryptography | [skills/crypto-randomness/T59-standard-crypto-libraries/SKILL.md](./skills/crypto-randomness/T59-standard-crypto-libraries/SKILL.md) | 8 | CODE_FIX | Applied |
 
 ### secrets-config
 | ID | Title | Skill File | Priority | Category | Status |
 |----|-------|-----------|----------|----------|--------|
-| T76 | Do not hardcode passwords | [skills/secrets-config/T76-do-not-hardcode-passwords/SKILL.md](./skills/secrets-config/T76-do-not-hardcode-passwords/SKILL.md) | 10 | CODE_FIX | Pending |
-| T2599 | Protect against connection string parameter pollution | [skills/secrets-config/T2599-connection-string-pollution/SKILL.md](./skills/secrets-config/T2599-connection-string-pollution/SKILL.md) | 9 | CODE_FIX | Pending |
+| T76 | Do not hardcode passwords | [skills/secrets-config/T76-do-not-hardcode-passwords/SKILL.md](./skills/secrets-config/T76-do-not-hardcode-passwords/SKILL.md) | 10 | CODE_FIX | Applied |
+| T2599 | Protect against connection string parameter pollution | [skills/secrets-config/T2599-connection-string-pollution/SKILL.md](./skills/secrets-config/T2599-connection-string-pollution/SKILL.md) | 9 | CODE_FIX | Applied |
 
 ### transport-security
 | ID | Title | Skill File | Priority | Category | Status |
 |----|-------|-----------|----------|----------|--------|
-| T21 | Ensure all data in transit is encrypted using a secure TLS channel | [skills/transport-security/T21-tls-for-data-in-transit/SKILL.md](./skills/transport-security/T21-tls-for-data-in-transit/SKILL.md) | 8 | CODE_FIX | Pending |
-| T156 | Validate certificate and its chain of trust properly | [skills/transport-security/T156-validate-certificate-chain/SKILL.md](./skills/transport-security/T156-validate-certificate-chain/SKILL.md) | 7 | CODE_FIX | Pending |
-| T558 | Authenticate all other components before any network communication with them | [skills/transport-security/T558-authenticate-components-network/SKILL.md](./skills/transport-security/T558-authenticate-components-network/SKILL.md) | 9 | CODE_FIX | Pending |
+| T21 | Ensure all data in transit is encrypted using a secure TLS channel | [skills/transport-security/T21-tls-for-data-in-transit/SKILL.md](./skills/transport-security/T21-tls-for-data-in-transit/SKILL.md) | 8 | CODE_FIX | Applied |
+| T156 | Validate certificate and its chain of trust properly | [skills/transport-security/T156-validate-certificate-chain/SKILL.md](./skills/transport-security/T156-validate-certificate-chain/SKILL.md) | 7 | CODE_FIX | Applied |
+| T558 | Authenticate all other components before any network communication with them | [skills/transport-security/T558-authenticate-components-network/SKILL.md](./skills/transport-security/T558-authenticate-components-network/SKILL.md) | 9 | CODE_FIX | Applied |
 
 ### privacy
 | ID | Title | Skill File | Priority | Category | Status |
 |----|-------|-----------|----------|----------|--------|
-| T742 | Implement technical measures to ensure the accuracy of personal information | [skills/privacy/T742-accuracy-of-personal-information/SKILL.md](./skills/privacy/T742-accuracy-of-personal-information/SKILL.md) | 7 | CODE_FIX | Pending |
-| T604 | Implement a consent withdrawal mechanism | [skills/privacy/T604-consent-withdrawal-mechanism/SKILL.md](./skills/privacy/T604-consent-withdrawal-mechanism/SKILL.md) | 10 | CODE_FIX | Pending |
-| T178 | Obtain consent from users prior to collecting personal information | [skills/privacy/T178-obtain-consent-before-collecting/SKILL.md](./skills/privacy/T178-obtain-consent-before-collecting/SKILL.md) | 10 | CODE_FIX | Pending |
-| T754 | Enable the restriction of processing personal information of an individual for a specific purpose | [skills/privacy/T754-restrict-processing-personal-info/SKILL.md](./skills/privacy/T754-restrict-processing-personal-info/SKILL.md) | 8 | CODE_FIX | Pending |
-| T544 | Anonymize (de-identify) identifying information before using it for a secondary purpose | [skills/privacy/T544-anonymize-for-secondary-purpose/SKILL.md](./skills/privacy/T544-anonymize-for-secondary-purpose/SKILL.md) | 8 | CODE_FIX | Pending |
-| T744 | Protect pseudonymized personal information | [skills/privacy/T744-protect-pseudonymized-info/SKILL.md](./skills/privacy/T744-protect-pseudonymized-info/SKILL.md) | 8 | CODE_FIX | Pending |
+| T742 | Implement technical measures to ensure the accuracy of personal information | [skills/privacy/T742-accuracy-of-personal-information/SKILL.md](./skills/privacy/T742-accuracy-of-personal-information/SKILL.md) | 7 | CODE_FIX | Applied |
+| T604 | Implement a consent withdrawal mechanism | [skills/privacy/T604-consent-withdrawal-mechanism/SKILL.md](./skills/privacy/T604-consent-withdrawal-mechanism/SKILL.md) | 10 | CODE_FIX | Applied |
+| T178 | Obtain consent from users prior to collecting personal information | [skills/privacy/T178-obtain-consent-before-collecting/SKILL.md](./skills/privacy/T178-obtain-consent-before-collecting/SKILL.md) | 10 | CODE_FIX | Applied |
+| T754 | Enable the restriction of processing personal information of an individual for a specific purpose | [skills/privacy/T754-restrict-processing-personal-info/SKILL.md](./skills/privacy/T754-restrict-processing-personal-info/SKILL.md) | 8 | CODE_FIX | Applied |
+| T544 | Anonymize (de-identify) identifying information before using it for a secondary purpose | [skills/privacy/T544-anonymize-for-secondary-purpose/SKILL.md](./skills/privacy/T544-anonymize-for-secondary-purpose/SKILL.md) | 8 | CODE_FIX | Applied |
+| T744 | Protect pseudonymized personal information | [skills/privacy/T744-protect-pseudonymized-info/SKILL.md](./skills/privacy/T744-protect-pseudonymized-info/SKILL.md) | 8 | CODE_FIX | Applied |
 
 ### file-handling
 | ID | Title | Skill File | Priority | Category | Status |
 |----|-------|-----------|----------|----------|--------|
-| T295 | Avoid storing unencrypted confidential data without access control mechanisms | [skills/file-handling/T295-no-unencrypted-confidential-storage/SKILL.md](./skills/file-handling/T295-no-unencrypted-confidential-storage/SKILL.md) | 7 | CODE_FIX | Pending |
-| T214 | Protect confidential files on operating system or server | [skills/file-handling/T214-protect-confidential-files-server/SKILL.md](./skills/file-handling/T214-protect-confidential-files-server/SKILL.md) | 9 | CODE_FIX | Pending |
+| T295 | Avoid storing unencrypted confidential data without access control mechanisms | [skills/file-handling/T295-no-unencrypted-confidential-storage/SKILL.md](./skills/file-handling/T295-no-unencrypted-confidential-storage/SKILL.md) | 7 | CODE_FIX | Applied |
+| T214 | Protect confidential files on operating system or server | [skills/file-handling/T214-protect-confidential-files-server/SKILL.md](./skills/file-handling/T214-protect-confidential-files-server/SKILL.md) | 9 | CODE_FIX | Applied |
 
 ### logging-audit
 | ID | Title | Skill File | Priority | Category | Status |
 |----|-------|-----------|----------|----------|--------|
-| T2602 | Log typical database and server activities and related metadata | [skills/logging-audit/T2602-log-db-and-server-activity/SKILL.md](./skills/logging-audit/T2602-log-db-and-server-activity/SKILL.md) | 8 | CODE_FIX | Pending |
-| T349 | Protect audit information and logs against unauthorized access | [skills/logging-audit/T349-protect-audit-logs/SKILL.md](./skills/logging-audit/T349-protect-audit-logs/SKILL.md) | 7 | CODE_FIX | Pending |
+| T2602 | Log typical database and server activities and related metadata | [skills/logging-audit/T2602-log-db-and-server-activity/SKILL.md](./skills/logging-audit/T2602-log-db-and-server-activity/SKILL.md) | 8 | CODE_FIX | Applied |
+| T349 | Protect audit information and logs against unauthorized access | [skills/logging-audit/T349-protect-audit-logs/SKILL.md](./skills/logging-audit/T349-protect-audit-logs/SKILL.md) | 7 | CODE_FIX | Applied |
 
 ### messaging
 | ID | Title | Skill File | Priority | Category | Status |
 |----|-------|-----------|----------|----------|--------|
-| T2157 | Secure email and messaging in web applications | [skills/messaging/T2157-secure-email-messaging/SKILL.md](./skills/messaging/T2157-secure-email-messaging/SKILL.md) | 7 | CODE_FIX | Pending |
+| T2157 | Secure email and messaging in web applications | [skills/messaging/T2157-secure-email-messaging/SKILL.md](./skills/messaging/T2157-secure-email-messaging/SKILL.md) | 7 | CODE_FIX | Applied |
 
 ### supply-chain
 | ID | Title | Skill File | Priority | Category | Status |
 |----|-------|-----------|----------|----------|--------|
-| T327 | Review security of Node.js modules before installation | [skills/supply-chain/T327-review-nodejs-modules/SKILL.md](./skills/supply-chain/T327-review-nodejs-modules/SKILL.md) | 10 | CODE_FIX | Pending |
-| T186 | Use recommended settings and the latest patches for third party libraries and software | [skills/supply-chain/T186-latest-patches-third-party/SKILL.md](./skills/supply-chain/T186-latest-patches-third-party/SKILL.md) | 10 | CODE_FIX | Pending |
+| T327 | Review security of Node.js modules before installation | [skills/supply-chain/T327-review-nodejs-modules/SKILL.md](./skills/supply-chain/T327-review-nodejs-modules/SKILL.md) | 10 | CODE_FIX | Applied |
+| T186 | Use recommended settings and the latest patches for third party libraries and software | [skills/supply-chain/T186-latest-patches-third-party/SKILL.md](./skills/supply-chain/T186-latest-patches-third-party/SKILL.md) | 10 | CODE_FIX | Applied |
 
 ### release-hardening
 | ID | Title | Skill File | Priority | Category | Status |
 |----|-------|-----------|----------|----------|--------|
-| T49 | Disable and remove debug capabilities and code/data, and prepare application for release | [skills/release-hardening/T49-disable-debug-prepare-release/SKILL.md](./skills/release-hardening/T49-disable-debug-prepare-release/SKILL.md) | 7 | CODE_FIX | Pending |
+| T49 | Disable and remove debug capabilities and code/data, and prepare application for release | [skills/release-hardening/T49-disable-debug-prepare-release/SKILL.md](./skills/release-hardening/T49-disable-debug-prepare-release/SKILL.md) | 7 | CODE_FIX | Applied |
 
 ### infrastructure
 | ID | Title | Skill File | Priority | Category | Status |
@@ -172,24 +172,24 @@ This repository is a **placeholder scaffold**. Implement each feature described 
 
 | Domain | Total | Implemented | Documented | Remaining |
 |--------|-------|-------------|------------|-----------|
-| authentication | 3 | 0 | 0 | 3 |
-| session-management | 2 | 0 | 0 | 2 |
-| authorization | 4 | 0 | 0 | 4 |
-| data-access | 4 | 0 | 0 | 4 |
-| api-security | 5 | 0 | 0 | 5 |
-| input-output-handling | 4 | 0 | 0 | 4 |
-| web-client-security | 4 | 0 | 0 | 4 |
-| crypto-randomness | 3 | 0 | 0 | 3 |
-| secrets-config | 2 | 0 | 0 | 2 |
-| transport-security | 3 | 0 | 0 | 3 |
-| privacy | 6 | 0 | 0 | 6 |
-| file-handling | 2 | 0 | 0 | 2 |
-| logging-audit | 2 | 0 | 0 | 2 |
-| messaging | 1 | 0 | 0 | 1 |
-| supply-chain | 2 | 0 | 0 | 2 |
-| release-hardening | 1 | 0 | 0 | 1 |
+| authentication | 3 | 3 | 0 | 0 |
+| session-management | 2 | 2 | 0 | 0 |
+| authorization | 4 | 4 | 0 | 0 |
+| data-access | 4 | 4 | 0 | 0 |
+| api-security | 5 | 5 | 0 | 0 |
+| input-output-handling | 4 | 4 | 0 | 0 |
+| web-client-security | 4 | 4 | 0 | 0 |
+| crypto-randomness | 3 | 3 | 0 | 0 |
+| secrets-config | 2 | 2 | 0 | 0 |
+| transport-security | 3 | 3 | 0 | 0 |
+| privacy | 6 | 6 | 0 | 0 |
+| file-handling | 2 | 2 | 0 | 0 |
+| logging-audit | 2 | 2 | 0 | 0 |
+| messaging | 1 | 1 | 0 | 0 |
+| supply-chain | 2 | 2 | 0 | 0 |
+| release-hardening | 1 | 1 | 0 | 0 |
 | infrastructure | 3 | 0 | 3 | 0 |
-| **TOTAL** | **51** | **0** | **3** | **48** |
+| **TOTAL** | **51** | **48** | **3** | **0** |
 
 **Remaining must reach 0 before the work is complete.**
 

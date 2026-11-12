@@ -43,4 +43,4 @@ function applyCors(req: NextRequest, res: NextResponse) {
 - [ ] Requests from an unknown origin get no CORS headers
 - [ ] `Vary: Origin` is set whenever CORS headers are sent
 
-**Status:** Pending
+**Status:** Applied

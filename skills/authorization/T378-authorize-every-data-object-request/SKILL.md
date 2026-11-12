@@ -46,4 +46,4 @@ if (!card) return new Response("Not found", { status: 404 });   // same for "not
 - [ ] Cross-customer ID tampering tests return 404
 - [ ] No route uses the service-role client for user-initiated reads
 
-**Status:** Pending
+**Status:** Applied

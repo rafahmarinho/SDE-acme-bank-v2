@@ -39,4 +39,4 @@ export function encrypt(plain: string, key: Buffer /* 32 bytes */) {
 - [ ] No MD5, SHA-1, DES, ECB or RC4 anywhere in the code
 - [ ] Encoding (Base64) is never used as protection
 
-**Status:** Pending
+**Status:** Applied

@@ -43,4 +43,4 @@ ignore-scripts=true
 - [ ] Install scripts are blocked unless allow-listed
 - [ ] `pnpm audit` reports no high or critical issues
 
-**Status:** Pending
+**Status:** Applied

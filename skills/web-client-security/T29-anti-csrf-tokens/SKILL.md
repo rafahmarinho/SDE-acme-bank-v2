@@ -45,4 +45,4 @@ export function assertCsrfToken(req: Request, cookieToken: string | undefined) {
 - [ ] No GET endpoint changes state
 - [ ] Transfer confirmation tokens are single-use
 
-**Status:** Pending
+**Status:** Applied

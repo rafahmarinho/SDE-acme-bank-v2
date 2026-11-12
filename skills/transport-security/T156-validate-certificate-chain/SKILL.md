@@ -35,4 +35,4 @@ export function register() {
 - [ ] No code or config disables certificate validation
 - [ ] The startup guard is present and tested
 
-**Status:** Pending
+**Status:** Applied

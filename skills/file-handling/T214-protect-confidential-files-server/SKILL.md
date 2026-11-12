@@ -41,4 +41,4 @@ headers: { "Content-Type": "text/csv; charset=utf-8", "Content-Disposition": `at
 - [ ] A description like `=1+1` exports as a literal string
 - [ ] Downloads send `Cache-Control: no-store`
 
-**Status:** Pending
+**Status:** Applied

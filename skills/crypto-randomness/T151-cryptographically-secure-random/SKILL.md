@@ -40,4 +40,4 @@ id uuid primary key default gen_random_uuid()
 - [ ] No `Math.random()` in identifier or token generation
 - [ ] All public IDs are UUIDs or CSPRNG-derived
 
-**Status:** Pending
+**Status:** Applied

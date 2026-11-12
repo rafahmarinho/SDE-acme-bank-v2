@@ -50,4 +50,4 @@ export async function middleware(req: NextRequest) {
 - [ ] Users can't change their own role
 - [ ] Sensitive actions require recent re-authentication
 
-**Status:** Pending
+**Status:** Applied

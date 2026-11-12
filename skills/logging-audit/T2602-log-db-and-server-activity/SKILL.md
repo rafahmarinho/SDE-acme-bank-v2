@@ -44,4 +44,4 @@ create trigger audit_cards after insert or update or delete on public.cards for 
 - [ ] Simulation reset and advance are logged with the admin's ID
 - [ ] Logs contain no secrets
 
-**Status:** Pending
+**Status:** Applied

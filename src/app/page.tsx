@@ -1,11 +1,11 @@
 /**
- * PLACEHOLDER - Landing / redirect
- *
- * Purpose (from specs/PRD.md): Entry point; redirects to /overview when signed in, /login otherwise.
- *
- * Security task recipes to follow when implementing: skills/authorization
- * Not production code - implement per AGENTS.md.
+ * Entry point: signed-in users go to their role's home, everyone else to /login.
  */
-export default function Page() {
-  return null;
+import { redirect } from "next/navigation";
+import { getAuthenticatedUser } from "@/lib/supabase/server";
+
+export default async function Page() {
+  const { user, role } = await getAuthenticatedUser();
+  if (!user) redirect("/login");
+  redirect(role === "customer" ? "/overview" : "/staff");
 }

@@ -40,4 +40,4 @@ return json(z.array(CustomerSummary).parse(data));      // response schema enfor
 - [ ] Every API response passes a schema
 - [ ] Error responses contain no SQL, stack traces or internal IDs
 
-**Status:** Pending
+**Status:** Applied

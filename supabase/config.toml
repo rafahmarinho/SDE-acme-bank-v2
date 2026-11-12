@@ -1,3 +1,55 @@
-# PLACEHOLDER - Supabase local config. Auth: email+password, password recovery emails,
-# rate limits, minimum password length. Storage: private 'statements' bucket.
+# Supabase local configuration for ACME Bank.
+# Mirror these Auth/Storage settings in the hosted project (Dashboard -> Authentication / Storage).
 project_id = "acme-bank-v2"
+
+[api]
+enabled = true
+schemas = ["public"]          # audit and private schemas are NOT exposed through the API
+extra_search_path = ["public"]
+max_rows = 1000               # backstop for unbounded result sets (T2600)
+
+[auth]
+enabled = true
+site_url = "http://localhost:3000"
+additional_redirect_urls = ["http://localhost:3000/reset-password"]
+jwt_expiry = 3600                         # access tokens live 1 hour at most
+enable_refresh_token_rotation = true      # rotate refresh tokens on every use
+refresh_token_reuse_interval = 10         # reuse detection window (seconds)
+enable_signup = false                     # accounts are created by the account-opening flow / admin API
+minimum_password_length = 12
+password_requirements = "lower_upper_letters_digits"
+
+[auth.rate_limit]
+email_sent = 2                 # recovery emails per hour per address
+sign_in_sign_ups = 30          # per 5 minutes per IP
+token_refresh = 150
+token_verifications = 30
+
+[auth.email]
+double_confirm_changes = true
+enable_confirmations = true
+secure_password_change = true  # require recent login to change password
+otp_expiry = 3600              # recovery links expire after 1 hour
+max_frequency = "60s"
+
+[auth.email.template.recovery]
+subject = "Reset your ACME Bank password"
+content_path = "./supabase/templates/recovery.html"
+
+[auth.captcha]
+enabled = false                # enable in hosted envs: provider = "turnstile", secret from env
+provider = "turnstile"
+secret = "env(SUPABASE_AUTH_CAPTCHA_SECRET)"
+
+[auth.email.smtp]
+enabled = false                # hosted: custom SMTP over TLS from a domain with SPF/DKIM/DMARC
+host = "env(SMTP_HOST)"
+port = 465
+user = "env(SMTP_USER)"
+pass = "env(SMTP_PASS)"
+admin_email = "security@mail.acme-bank.example"
+sender_name = "ACME Bank"
+
+[storage]
+enabled = true
+file_size_limit = "10MiB"

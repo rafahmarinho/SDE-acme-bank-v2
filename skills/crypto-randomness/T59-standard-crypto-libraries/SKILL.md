@@ -34,4 +34,4 @@ import { webcrypto, createHash, timingSafeEqual } from "node:crypto";   // serve
 - [ ] No custom cryptographic primitives in the repository
 - [ ] The lint rule blocks unapproved crypto packages
 
-**Status:** Pending
+**Status:** Applied

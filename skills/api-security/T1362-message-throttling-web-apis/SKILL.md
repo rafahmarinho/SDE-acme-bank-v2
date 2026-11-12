@@ -47,4 +47,4 @@ export async function POST(req: Request) {
 - [ ] Going over the limit returns 429 with `Retry-After`
 - [ ] Limits are covered by automated tests
 
-**Status:** Pending
+**Status:** Applied

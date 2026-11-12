@@ -43,4 +43,4 @@ create view public.profiles_support as
 - [ ] Support can't update balances, limits or ledger rows
 - [ ] SQL tests assert the denials for each role
 
-**Status:** Pending
+**Status:** Applied

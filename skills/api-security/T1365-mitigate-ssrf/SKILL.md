@@ -42,4 +42,4 @@ export async function safeFetch(url: string, init?: RequestInit) {
 - [ ] All outbound calls go through `safeFetch` with an allow-list
 - [ ] Simulated integrations make no network requests
 
-**Status:** Pending
+**Status:** Applied

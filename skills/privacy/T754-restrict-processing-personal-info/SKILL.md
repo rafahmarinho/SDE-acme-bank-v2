@@ -40,4 +40,4 @@ export async function assertProcessingAllowed(userId: string, activity: Activity
 - [ ] Services check restrictions before processing
 - [ ] Restriction changes are audited
 
-**Status:** Pending
+**Status:** Applied

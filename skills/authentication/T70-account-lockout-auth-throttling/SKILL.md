@@ -49,4 +49,4 @@ export async function login(email: string, password: string, ip: string) {
 - [ ] The error message doesn't reveal whether the email exists
 - [ ] Failed attempts are recorded in the audit log
 
-**Status:** Pending
+**Status:** Applied

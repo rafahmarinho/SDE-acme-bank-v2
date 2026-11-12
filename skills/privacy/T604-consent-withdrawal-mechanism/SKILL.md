@@ -46,4 +46,4 @@ create policy own_consents on public.consents using (user_id = auth.uid()) with 
 - [ ] Withdrawal is honored by the email and analytics services
 - [ ] Consent changes are recorded with timestamps
 
-**Status:** Pending
+**Status:** Applied

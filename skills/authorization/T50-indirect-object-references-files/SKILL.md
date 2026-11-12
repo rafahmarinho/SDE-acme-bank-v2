@@ -41,4 +41,4 @@ export async function GET(_: Request, { params }: { params: Promise<{ statementI
 - [ ] The statements bucket is private, with owner-only Storage policies
 - [ ] Signed URLs expire within 60 seconds
 
-**Status:** Pending
+**Status:** Applied

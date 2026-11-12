@@ -41,4 +41,4 @@ router.replace(safeNext(params.get("next")));
 - [ ] `?next=javascript:...` and `?next=//evil` both redirect to /overview
 - [ ] Search terms with HTML render as plain text
 
-**Status:** Pending
+**Status:** Applied

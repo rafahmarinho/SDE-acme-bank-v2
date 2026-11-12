@@ -10,8 +10,9 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "audit": "pnpm audit --prod",
-    "db:reset": "supabase db reset"
+    "audit": "pnpm audit --prod --audit-level=high",
+    "db:reset": "supabase db reset",
+    "seed:demo": "tsx scripts/seed-demo.ts"
   },
   "dependencies": {
     "next": "^16.0.0",
@@ -19,6 +20,8 @@
     "react-dom": "^19.2.0",
     "@supabase/supabase-js": "^2.58.0",
     "@supabase/ssr": "^0.7.0",
+    "@react-pdf/renderer": "^4.3.0",
+    "server-only": "^0.0.1",
     "zod": "^4.1.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -35,6 +38,7 @@
     "eslint": "^9.0.0",
     "eslint-config-next": "^16.0.0",
     "vitest": "^3.2.0",
+    "tsx": "^4.20.0",
     "supabase": "^2.40.0"
   },
   "pnpm": {

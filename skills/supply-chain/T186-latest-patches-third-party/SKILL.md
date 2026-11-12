@@ -39,4 +39,4 @@ Pinning whatever versions were current at scaffold time and never updating. That
 - [ ] No dependencies with known high or critical CVEs
 - [ ] The secure configuration for Next.js and Supabase is documented
 
-**Status:** Pending
+**Status:** Applied

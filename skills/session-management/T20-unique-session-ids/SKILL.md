@@ -50,4 +50,4 @@ export async function createServerClient() {
 - [ ] A role change forces a new session
 - [ ] Refresh-token rotation and reuse detection are enabled
 
-**Status:** Pending
+**Status:** Applied

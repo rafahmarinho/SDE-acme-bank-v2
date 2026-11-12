@@ -42,4 +42,4 @@ const EXPORTERS = { csv: toCsv, pdf: toPdf } as const;   // format allow-list
 - [ ] Unknown scenarios and formats are rejected with 400
 - [ ] `advanceDays` is bounded
 
-**Status:** Pending
+**Status:** Applied

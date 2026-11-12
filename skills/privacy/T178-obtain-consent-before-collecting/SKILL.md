@@ -39,4 +39,4 @@ A multi-step account-opening form that collects name, date of birth, address and
 - [ ] Optional consents default to off
 - [ ] Each consent record includes the notice version and a timestamp
 
-**Status:** Pending
+**Status:** Applied

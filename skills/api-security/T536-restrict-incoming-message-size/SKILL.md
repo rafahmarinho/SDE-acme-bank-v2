@@ -42,4 +42,4 @@ export async function readJson<T>(req: Request, schema: z.ZodType<T>, maxBytes =
 - [ ] Every route handler reads its body through the size-limited helper
 - [ ] Oversized requests get a 413
 
-**Status:** Pending
+**Status:** Applied

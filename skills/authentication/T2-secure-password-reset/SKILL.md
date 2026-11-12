@@ -63,4 +63,4 @@ export async function setNewPassword(password: string) {
 - [ ] Recovery links expire and can't be reused
 - [ ] Other sessions are revoked after a successful reset
 
-**Status:** Pending
+**Status:** Applied

@@ -35,4 +35,4 @@ if (isProd && (supabaseUrl.protocol !== "https:" || !supabaseUrl.host.endsWith("
 - [ ] Connection configuration is read only from env at startup
 - [ ] No request parameter influences the DB/client configuration
 
-**Status:** Pending
+**Status:** Applied
