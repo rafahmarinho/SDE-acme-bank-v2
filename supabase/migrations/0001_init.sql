@@ -1,0 +1,5 @@
+-- PLACEHOLDER - initial schema for ACME Bank (profiles, roles, accounts, ledger_entries,
+-- transfers, beneficiaries, scheduled_payments, cards, statements, support_tickets, sim_events).
+-- Amounts are BIGINT cents.
+-- Security task recipes: skills/data-access (RLS on every table, least-privilege grants),
+-- skills/logging-audit (append-only ledger/audit tables).

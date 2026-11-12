@@ -1,0 +1,3 @@
+# PLACEHOLDER - Supabase local config. Auth: email+password, password recovery emails,
+# rate limits, minimum password length. Storage: private 'statements' bucket.
+project_id = "acme-bank-v2"

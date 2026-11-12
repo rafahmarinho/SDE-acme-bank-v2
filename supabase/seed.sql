@@ -1,0 +1,2 @@
+-- PLACEHOLDER - demo data: six customers with two months of transactions (fictional data only).
+-- See skills/privacy (no real personal data in seeds).
