@@ -8,7 +8,8 @@ import { errorResponse, HttpError } from "@/lib/errors";
 import { readJson } from "@/lib/http";
 import { isUuid } from "@/lib/ids";
 import { BUDGETS, rateLimit } from "@/lib/rate-limit";
-import { CardUpdate, getCard, updateCard } from "@/services/cards.service";
+import { CardUpdate, getCard, needsStepUp, updateCard } from "@/services/cards.service";
+import { hasRecentStepUp } from "@/services/step-up.service";
 
 export const maxDuration = 10;
 export const dynamic = "force-dynamic";
@@ -35,6 +36,10 @@ export async function PATCH(req: Request, { params }: Ctx) {
     const { user, role, supabase } = await authorize("cards/:id", "PATCH");
     await rateLimit(`mutation:${user.id}`, BUDGETS.mutation);
     const input = await readJson(req, CardUpdate, 1024);
+    // Same rule as the UI: unblocking / raising the limit needs a recent password confirmation (T338).
+    if ((await needsStepUp(supabase, user.id, role, cardId, input)) && !(await hasRecentStepUp(user.id))) {
+      throw new HttpError(403, "Please confirm your password to make this change.");
+    }
     return Response.json(await updateCard(supabase, user.id, role, cardId, input));
   } catch (err) {
     return errorResponse(err);

@@ -1,2 +1,98 @@
-/* PLACEHOLDER - Tailwind v4 + shadcn/ui tokens (navy blue / orange theme). */
 @import "tailwindcss";
+@import "tw-animate-css";
+
+/* ACME Bank theme - navy blue + orange (shadcn/ui token layout). */
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-destructive: var(--destructive);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-navy-950: var(--navy-950);
+  --color-navy-900: var(--navy-900);
+  --color-navy-800: var(--navy-800);
+  --color-navy-700: var(--navy-700);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-border: var(--sidebar-border);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.75rem;
+  --navy-950: oklch(0.18 0.05 262);
+  --navy-900: oklch(0.23 0.07 262);
+  --navy-800: oklch(0.29 0.08 262);
+  --navy-700: oklch(0.36 0.09 262);
+
+  --background: oklch(0.975 0.005 255);
+  --foreground: oklch(0.21 0.04 262);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.21 0.04 262);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.21 0.04 262);
+  --primary: oklch(0.29 0.08 262);            /* navy */
+  --primary-foreground: oklch(0.98 0.005 255);
+  --secondary: oklch(0.95 0.01 255);
+  --secondary-foreground: oklch(0.29 0.08 262);
+  --muted: oklch(0.955 0.008 255);
+  --muted-foreground: oklch(0.5 0.03 260);
+  --accent: oklch(0.95 0.035 60);
+  --accent-foreground: oklch(0.45 0.13 45);
+  --brand: oklch(0.7 0.19 48);                /* orange */
+  --brand-foreground: oklch(0.99 0 0);
+  --destructive: oklch(0.58 0.22 27);
+  --success: oklch(0.6 0.14 155);
+  --warning: oklch(0.75 0.16 75);
+  --border: oklch(0.91 0.012 255);
+  --input: oklch(0.88 0.015 255);
+  --ring: oklch(0.7 0.19 48);
+  --sidebar: oklch(0.23 0.07 262);
+  --sidebar-foreground: oklch(0.93 0.02 255);
+  --sidebar-accent: oklch(0.3 0.08 262);
+  --sidebar-border: oklch(0.32 0.07 262);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "tnum" 1, "cv11" 1;
+  }
+  dialog::backdrop {
+    background: oklch(0.18 0.05 262 / 0.55);
+    backdrop-filter: blur(2px);
+  }
+}
+
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}

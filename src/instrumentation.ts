@@ -10,7 +10,8 @@ export function register() {
   }
   if (process.env.NODE_ENV === "production") {
     const url = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
-    if (!url.startsWith("https://")) {
+    const loopback = /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(url); // local `next start` only
+    if (!url.startsWith("https://") && !loopback) {
       throw new Error("Refusing to start: NEXT_PUBLIC_SUPABASE_URL must use https in production.");
     }
   }

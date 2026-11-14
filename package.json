@@ -11,35 +11,38 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "audit": "pnpm audit --prod --audit-level=high",
-    "db:reset": "supabase db reset",
-    "seed:demo": "tsx scripts/seed-demo.ts"
+    "db:reset": "supabase db reset && pnpm seed:demo",
+    "seed:demo": "tsx --env-file-if-exists=.env.local scripts/seed-demo.ts",
+    "test:db": "node --env-file-if-exists=.env.local ./node_modules/vitest/vitest.mjs run tests/db.integration.test.ts"
   },
   "dependencies": {
-    "next": "^16.0.0",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "@supabase/supabase-js": "^2.58.0",
-    "@supabase/ssr": "^0.7.0",
     "@react-pdf/renderer": "^4.3.0",
-    "server-only": "^0.0.1",
-    "zod": "^4.1.0",
+    "@supabase/ssr": "^0.7.0",
+    "@supabase/supabase-js": "^2.58.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "lucide-react": "^1.72.0",
+    "next": "^16.0.0",
+    "radix-ui": "^1.8.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "server-only": "^0.0.1",
     "tailwind-merge": "^3.3.0",
-    "lucide-react": "^0.540.0"
+    "zod": "^4.1.0"
   },
   "devDependencies": {
-    "typescript": "^5.9.0",
+    "@tailwindcss/postcss": "^4.1.0",
     "@types/node": "^22.0.0",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
-    "tailwindcss": "^4.1.0",
-    "@tailwindcss/postcss": "^4.1.0",
     "eslint": "^9.0.0",
     "eslint-config-next": "^16.0.0",
-    "vitest": "^3.2.0",
+    "supabase": "^2.40.0",
+    "tailwindcss": "^4.1.0",
     "tsx": "^4.20.0",
-    "supabase": "^2.40.0"
+    "tw-animate-css": "^1.4.0",
+    "typescript": "^5.9.0",
+    "vitest": "^3.2.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": []

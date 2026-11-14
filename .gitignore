@@ -8,3 +8,6 @@ coverage/
 *.log
 .vercel
 supabase/.temp/
+next-env.d.ts
+*.tsbuildinfo
+supabase/.branches/

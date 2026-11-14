@@ -12,18 +12,24 @@ import { getAuthenticatedUser, type AppRole } from "@/lib/supabase/server";
 type Method = "GET" | "POST" | "PATCH" | "PUT" | "DELETE";
 
 export const POLICY = {
-  "accounts": { GET: ["customer"] },
+  "overview": { GET: ["customer"] },
+  "accounts": { GET: ["customer"], POST: ["customer"] },
   "transfers": { GET: ["customer"], POST: ["customer"] },
   "scheduled-payments": { GET: ["customer"], POST: ["customer"], PATCH: ["customer"] },
   "beneficiaries": { GET: ["customer"], POST: ["customer"], DELETE: ["customer"] },
+  "cards": { GET: ["customer"] },
   "cards/:id": { GET: ["customer", "support", "admin"], PATCH: ["customer", "admin"] },
-  "statements": { POST: ["customer"] },
+  "statements": { GET: ["customer"], POST: ["customer"] },
   "statements/:id": { GET: ["customer"] },
   "profile": { GET: ["customer"], PATCH: ["customer"] },
   "consents": { GET: ["customer"], PATCH: ["customer"] },
   "support": { GET: ["customer", "support", "admin"], POST: ["customer", "support", "admin"] },
+  "support/:id": { GET: ["customer", "support", "admin"], POST: ["customer", "support", "admin"], PATCH: ["customer", "support", "admin"] },
+  "security": { POST: ["customer", "support", "admin"], PATCH: ["customer", "support", "admin"], DELETE: ["customer", "support", "admin"] },
+  "staff/dashboard": { GET: ["support", "admin"] },
   "staff/customers": { GET: ["support", "admin"] },
   "staff/restrictions": { POST: ["support", "admin"] },
+  "staff/audit": { GET: ["admin"] },
   "users:role": { PATCH: ["admin"] },
   "simulation": { GET: ["admin"], POST: ["admin"] },
 } as const satisfies Record<string, Partial<Record<Method, readonly AppRole[]>>>;

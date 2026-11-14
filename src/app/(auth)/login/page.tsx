@@ -1,16 +1,32 @@
 /**
- * Login page (email + password via auth.service; throttled, generic errors).
- * The `next` parameter is passed through as plain form data and validated by safeNext() server-side.
+ * Login page (email + password via auth.service; throttled, generic errors - T70).
+ * The `next` parameter is passed through as plain form data and validated by safeNext() server-side (T37).
  */
+import type { Metadata } from "next";
+import Link from "next/link";
+import { CircleCheck } from "lucide-react";
+import { Alert, AlertDescription } from "@/components/ui/feedback";
 import { LoginForm } from "./login-form";
 
-export default async function Page({ searchParams }: { searchParams: Promise<{ next?: string; reset?: string }> }) {
-  const { next, reset } = await searchParams;
+export const metadata: Metadata = { title: "Sign in" };
+
+export default async function Page({ searchParams }: { searchParams: Promise<{ next?: string; reset?: string; opened?: string }> }) {
+  const { next, reset, opened } = await searchParams;
   return (
-    <main className="mx-auto max-w-sm p-6">
-      <h1 className="text-2xl font-semibold">Sign in to ACME Bank</h1>
-      {reset ? <p role="status">Your password was updated. Please sign in.</p> : null}
+    <div>
+      <h1 className="text-2xl font-semibold tracking-tight text-primary">Welcome back</h1>
+      <p className="mt-1 text-sm text-muted-foreground">Sign in to your ACME Bank account.</p>
+      {reset || opened ? (
+        <Alert variant="success" className="mt-6">
+          <CircleCheck aria-hidden />
+          <AlertDescription>{reset ? "Your password was updated. Please sign in." : "Thanks! If your details were valid, your account is ready. Sign in to get started."}</AlertDescription>
+        </Alert>
+      ) : null}
       <LoginForm next={typeof next === "string" ? next : ""} />
-    </main>
+      <p className="mt-8 text-center text-sm text-muted-foreground">
+        New to ACME Bank?{" "}
+        <Link href="/open-account" className="font-medium text-brand hover:underline">Open an account</Link>
+      </p>
+    </div>
   );
 }

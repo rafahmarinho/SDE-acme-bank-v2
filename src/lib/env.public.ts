@@ -7,6 +7,8 @@
 import { z } from "zod";
 
 const isProd = process.env.NODE_ENV === "production";
+/** Loopback hosts (local `next start` against the local Supabase stack) never leave the machine. */
+const isLoopback = (url: URL) => url.hostname === "localhost" || url.hostname === "127.0.0.1";
 
 const SupabaseUrl = z
   .string()
@@ -14,14 +16,15 @@ const SupabaseUrl = z
   .refine((value) => {
     const url = new URL(value);
     if (url.username || url.password || url.search || url.hash) return false; // no injected parameters
-    if (!isProd) return url.protocol === "https:" || url.hostname === "localhost" || url.hostname === "127.0.0.1";
+    if (isLoopback(url)) return true;
+    if (!isProd) return url.protocol === "https:";
     return url.protocol === "https:" && url.hostname.endsWith(".supabase.co");
   }, "NEXT_PUBLIC_SUPABASE_URL must be an https Supabase project URL without credentials or query parameters");
 
 const SiteUrl = z
   .string()
   .url()
-  .refine((value) => !isProd || new URL(value).protocol === "https:", "NEXT_PUBLIC_SITE_URL must use https in production");
+  .refine((value) => !isProd || new URL(value).protocol === "https:" || isLoopback(new URL(value)), "NEXT_PUBLIC_SITE_URL must use https in production");
 
 const PublicEnvSchema = z.object({
   supabaseUrl: SupabaseUrl,

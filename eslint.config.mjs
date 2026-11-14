@@ -47,7 +47,7 @@ const securityRules = {
   ],
 };
 
-export default [
+const config = [
   ...nextCoreWebVitals,
   { ignores: [".next/**", "node_modules/**", "skills/**"] },
   { files: ["**/*.{ts,tsx,js,mjs}"], rules: securityRules },
@@ -57,3 +57,5 @@ export default [
     rules: { "no-restricted-properties": "off" },
   },
 ];
+
+export default config;

@@ -11,7 +11,7 @@ max_rows = 1000               # backstop for unbounded result sets (T2600)
 [auth]
 enabled = true
 site_url = "http://localhost:3000"
-additional_redirect_urls = ["http://localhost:3000/reset-password"]
+additional_redirect_urls = ["http://localhost:3000/auth/confirm", "http://localhost:3000/reset-password"]
 jwt_expiry = 3600                         # access tokens live 1 hour at most
 enable_refresh_token_rotation = true      # rotate refresh tokens on every use
 refresh_token_reuse_interval = 10         # reuse detection window (seconds)

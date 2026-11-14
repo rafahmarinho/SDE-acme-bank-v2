@@ -36,6 +36,7 @@ const DB_ERRORS: Record<string, [number, string]> = {
   beneficiary_not_found: [404, "Not found."],
   invalid_amount: [400, "Invalid amount."],
   invalid_destination: [400, "Invalid destination."],
+  invalid_reference: [400, "The reference can have up to 140 characters."],
 };
 
 function mapDbError(message: string | undefined): never {
@@ -73,15 +74,25 @@ export async function confirm(supabase: SupabaseClient, userId: string, input: z
   return { transferId: data as string, status: "pending" as const };
 }
 
-export async function listTransfers(supabase: SupabaseClient, userId: string, limit = 25) {
-  const { data, error } = await supabase
+export const TRANSFER_STATUSES = ["pending", "completed", "failed", "cancelled"] as const;
+
+export type TransferRow = {
+  id: string; amount_cents: number; fee_cents: number; reference: string | null; status: string;
+  created_at: string; settled_at: string | null;
+  from: { name: string } | null; to: { name: string } | null; beneficiary: { nickname: string; bank_name: string } | null;
+};
+
+export async function listTransfers(supabase: SupabaseClient, userId: string, limit = 25, status?: string): Promise<TransferRow[]> {
+  let q = supabase
     .from("transfers")
-    .select("id, amount_cents, fee_cents, reference, status, created_at, settled_at")
+    .select("id, amount_cents, fee_cents, reference, status, created_at, settled_at, from:accounts!transfers_from_account_id_fkey(name), to:accounts!transfers_to_account_id_fkey(name), beneficiary:beneficiaries(nickname, bank_name)")
     .eq("customer_id", userId)
     .order("created_at", { ascending: false })
     .limit(Math.min(Math.max(limit, 1), 50));
+  if (status && (TRANSFER_STATUSES as readonly string[]).includes(status)) q = q.eq("status", status);
+  const { data, error } = await q;
   if (error) mapDbError(error.message);
-  return data;
+  return data as unknown as TransferRow[];
 }
 
 /** Settlement job - called only from the CRON_SECRET-authenticated /api/jobs/settle route. */

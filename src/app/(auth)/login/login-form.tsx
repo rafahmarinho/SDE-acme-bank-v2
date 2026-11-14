@@ -1,24 +1,29 @@
 "use client";
 
+import Link from "next/link";
 import { useActionState } from "react";
+import { FormMessage, SubmitButton } from "@/components/app/form-bits";
+import { Input, Label } from "@/components/ui/form-controls";
 import { loginAction, type FormState } from "../actions";
 
 export function LoginForm({ next }: { next: string }) {
-  const [state, action, pending] = useActionState<FormState, FormData>(loginAction, null);
+  const [state, action] = useActionState<FormState, FormData>(loginAction, null);
   return (
-    <form action={action} className="mt-6 space-y-4" noValidate>
+    <form action={action} className="mt-8 grid gap-5">
       <input type="hidden" name="next" value={next} />
-      <label className="block">
-        Email
-        <input name="email" type="email" autoComplete="username" required maxLength={254} className="block w-full" />
-      </label>
-      <label className="block">
-        Password
-        <input name="password" type="password" autoComplete="current-password" required maxLength={128} className="block w-full" />
-      </label>
-      {state && !state.ok ? <p role="alert">{state.message}</p> : null}
-      <button type="submit" disabled={pending}>{pending ? "Signing in..." : "Sign in"}</button>
-      <a href="/forgot-password">Forgot your password?</a>
+      <div className="grid gap-1.5">
+        <Label htmlFor="email">Email</Label>
+        <Input id="email" name="email" type="email" autoComplete="username" required maxLength={254} placeholder="you@example.com" />
+      </div>
+      <div className="grid gap-1.5">
+        <div className="flex items-center justify-between">
+          <Label htmlFor="password">Password</Label>
+          <Link href="/forgot-password" className="text-xs font-medium text-brand hover:underline">Forgot your password?</Link>
+        </div>
+        <Input id="password" name="password" type="password" autoComplete="current-password" required maxLength={128} />
+      </div>
+      {state && !state.ok ? <FormMessage state={state} /> : null}
+      <SubmitButton size="lg" pendingText="Signing in...">Sign in</SubmitButton>
     </form>
   );
 }

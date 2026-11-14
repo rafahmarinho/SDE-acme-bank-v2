@@ -1,14 +1,13 @@
 /**
  * Staff area layout (Server Component). Re-checks the role on the server for every staff page,
- * independently of the middleware and of any client-side navigation hiding.
- * /simulation additionally requires the admin role (enforced in its own page and API).
+ * independently of the proxy and of any client-side navigation hiding (T17).
+ * Admin-only pages (/staff/audit, /simulation) check the admin role again themselves.
  */
-import { redirect } from "next/navigation";
-import { getAuthenticatedUser } from "@/lib/supabase/server";
+import { AppShell } from "@/components/app/app-shell";
+import { requirePageRole } from "@/lib/page-auth";
 
 export default async function StaffLayout({ children }: { children: React.ReactNode }) {
-  const { user, role } = await getAuthenticatedUser();
-  if (!user) redirect("/login");
-  if (role !== "support" && role !== "admin") redirect("/overview");
-  return <>{children}</>;
+  const { user, role } = await requirePageRole(["support", "admin"]);
+  const displayName = (user.user_metadata?.full_name as string | undefined) ?? user.email ?? "Staff";
+  return <AppShell role={role} displayName={displayName} email={user.email ?? ""}>{children}</AppShell>;
 }

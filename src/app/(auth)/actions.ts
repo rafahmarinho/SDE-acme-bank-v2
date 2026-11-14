@@ -19,7 +19,7 @@ async function requestIp() {
 export async function loginAction(_prev: FormState, form: FormData): Promise<FormState> {
   const result = await login({ email: form.get("email"), password: form.get("password") }, await requestIp());
   if (!result.ok) return result;
-  redirect(safeNext(form.get("next")?.toString()));
+  redirect(safeNext(form.get("next")?.toString(), "/")); // "/" routes to the role's home page
 }
 
 export async function forgotPasswordAction(_prev: FormState, form: FormData): Promise<FormState> {
